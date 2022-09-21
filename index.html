@@ -404,6 +404,12 @@
           </div>
         </div>
       </div>
+      <!-- mail-input -->
+      <form action="form-footer"></form>
+      <h2 class="footer-title-mail">Підпишіться на розсилку</h2>
+      <label class="footer-sabscription" for="footer-mail"></label>
+      <input class="footer-input-mail" type="email" name="footer-email" id="footer-mail">
+      <button class="footer-button-submit" type="submit"><svg width="24" height="24"><use></use></svg></button>
     </footer>
     <!-- modalne-windows -->
     <div class="backdrop is-hidden" data-modal>
@@ -413,17 +419,29 @@
             <use href="./img/icons.svg#icon-cross"></use>
           </svg>
         </button>
+        <!-- Внутрішня розмитка модального вікна -->
         <form class="form-user">
-          <label for="user-name">Им'я</label>
-          <input type="text" name="name" id="user-name">
-          <label for="user-tel">Телефон</label>
-          <input type="tel" name="user-tel" id="user-tel">
-          <label for="user-mail">Пошта</label>
-          <input type="email" name="user-email" id="user-mail">
-          <label for=""></label>
-          <button type="submit">Відправити</button>
-          <input type="checkbox" name="agreement" value="user-agreement" id="user-agreement">
-          <label for="user-agreement">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          <h2 class="user-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <label class="user-full-name" for="user-name"> <span class="user-text">Им'я</span><svg class="user-icon" width="18" height="18">
+          <use href=""></use></svg></label>
+          <input class="user-input-name" type="text" name="name" id="user-name">
+         
+          <label class="user-connection" for="user-tel"><span class="user-text">Телефон</span><svg class="user-icon" width="18" height="18">
+            <use href=""></use></svg></label>
+          <input class="user-input-connection" type="tel" name="user-tel" id="user-tel">
+          <label class="user-mail-sub" for="user-mail"><span class="user-text">Пошта</span><svg class="user-icon" width="18" height="18">
+            <use href=""></use></svg></label>
+          <input class="user-input-mail" type="email" name="user-email" id="user-mail">
+          <label class="user-comment-sub" for="user-comment"><span class="user-text">Коментар</span><svg class="user-icon" width="18" height="18">
+            <use href=""></use></svg></label>
+          <input class="user-input-comment" type="comment" name="user-comment" id="user-comment">
+          
+          <label class="user-agreement-sub" for="user-agreement"><span class="user-agreement-text">Погоджуюся з розсилкою та приймаю  Умови договору</span>
+            <a class="user-agreement-link" href=""><span class="button-text-user current">Умови договору</span></a>
+          </label>
+          <input class="checkbox-agrement" type="checkbox" name="agreement" value="user-agreement" id="user-agreement">
+           
+          <button class="button-submit" type="submit"> <span class="button-text-user"> Відправити</span></button>
         </form>
       </div>
     </div>
