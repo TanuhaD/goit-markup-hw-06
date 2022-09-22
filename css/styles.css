@@ -134,7 +134,7 @@ img {
 }
 
 .test-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -151,6 +151,9 @@ img {
 }
 
 .icon-header {
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
   fill: currentColor;
 }
 
@@ -403,7 +406,7 @@ img {
 }
 
 .user-text {
-  margin-bottom: 12px;
+  margin-bottom:4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -411,7 +414,7 @@ img {
 }
 .user-icon {
   position: absolute;
-  top: 38px;
+  top: 30px;
   fill: currentColor;
   left: 15px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -527,12 +530,15 @@ img {
   border-radius: 2px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .checkbox-agrement:checked ~ .user__checkbox-custom {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 .user__checkbox-icon {
   display: none;
+
 }
 .checkbox-agrement:checked ~ .user__checkbox-icon {
   position: absolute;
